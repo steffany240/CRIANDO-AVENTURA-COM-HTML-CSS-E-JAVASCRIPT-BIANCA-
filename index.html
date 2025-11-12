@@ -6,23 +6,79 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-    <title>Em busca da cidade perdida</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@300;400;600&display=swap" rel="stylesheet">
+    <title>Em busca do Coração das Estrelas</title>
 </head>
 <body>
     <main>
         <div class="passo ativo" id="passo-0">
-            <p>O jogador encontra um mapa antigo em uma biblioteca esquecida. O mapa possui símbolos enigmáticos e coordenadas que precisam ser decifradas.
-Desafio: O jogador deve decifrar um código com base nas pistas do mapa. O código é uma sequência de letras que formam uma palavra-chave.
-Exemplo de Enigma: "A palavra que você procura está escondida nas primeiras letras dos pontos cardeais."</p>
+            <img src="img/cenario-passo0.png" alt="">
+            <p>Durante uma visita ao museu da escola, encontrei um diário antigo descrevendo a lenda do “Coração das Estrelas”, um artefato místico capaz de iluminar a noite mais escura. As páginas falavam de pistas escondidas pelo Brasil, e eu decidi segui-las!</p>
             <button class="btn-proximo" data-proximo="1">Rio de Janeiro</button>
             <button class="btn-proximo" data-proximo="2">Pernambuco</button>
         </div>
+
         <div class="passo" id="passo-1">
-            <p>O jogador encontra um rio largo e precisa atravessá-lo. Há uma solução engenhosa envolv
-endo a construção de uma balsa ou a utilização de objetos encontrados..</p>
-            <button class="btn-proximo" data-proximo="3">Procurar a pista no topo do pico</button>
+            <p>No Rio de Janeiro, você começa sua jornada subindo o Pico da Tijuca ao amanhecer, onde dizem que o primeiro sinal do artefato aparece com o nascer do sol.</p>
+            <button class="btn-proximo" data-proximo="3">Observar o nascer do sol no topo</button>
             <button class="btn-proximo" data-proximo="4">Desistir e voltar para casa</button>
+        </div>
+
+        <div class="passo" id="passo-2">
+            <p>Em Pernambuco, você visita a charmosa cidade de Olinda. O diário menciona que uma das pistas sobre o Coração das Estrelas foi escondida em um dos pontos turísticos. Onde procurar?</p>
+            <button class="btn-proximo" data-proximo="5">Explorar as igrejas antigas</button>
+            <button class="btn-proximo" data-proximo="6">Investigar as praias próximas</button>
+        </div>
+
+        <div class="passo" id="passo-3">
+            <p>No topo do Pico da Tijuca, uma inscrição antiga aparece quando a luz do sol toca a pedra. Ela indica que a próxima pista está escondida na floresta amazônica.</p>
+            <button class="btn-proximo" data-proximo="7">Viajar para o Amazonas</button>
+        </div>
+
+        <div class="passo" id="passo-4">
+            <img src="img/cenario-passo4-voltar-casa.png" alt="imagem voltando para casa e desistindo da aventura">
+            <p>Você decide que a jornada é arriscada demais e retorna para casa, mas a curiosidade sobre o Coração das Estrelas nunca sai da sua mente.</p>
+        </div>
+
+        <div class="passo" id="passo-5">
+            <p>Nas igrejas antigas, você descobre um vitral escondido que projeta um mapa quando iluminado pelo sol. Ele aponta o caminho para o Amazonas.</p>
+            <button class="btn-proximo" data-proximo="7">Seguir para o Amazonas</button>
+        </div>
+
+        <div class="passo" id="passo-6">
+            <p>Nas praias, você encontra uma caverna misteriosa, mas dentro dela não há nada além de conchas e silêncio. É hora de tentar outro lugar.</p>
+            <button class="btn-proximo" data-proximo="8">Voltar e explorar as igrejas</button>
+        </div>
+
+        <div class="passo" id="passo-7">
+            <p>No coração da floresta amazônica, a busca pelo Coração das Estrelas se intensifica. Você chega a um grande rio que se divide em dois caminhos.</p>
+            <button class="btn-proximo" data-proximo="9">Seguir pelo rio à esquerda</button>
+            <button class="btn-proximo" data-proximo="10">Seguir pelo rio à direita</button>
+        </div>
+
+        <div class="passo" id="passo-8">
+            <p>De volta às igrejas, você ativa o vitral novamente e confirma o mapa. Sua próxima parada é o Amazonas!</p>
+            <button class="btn-proximo" data-proximo="7">Viajar para o Amazonas</button>
+        </div>
+
+        <div class="passo" id="passo-9">
+            <p>O rio à esquerda leva você a uma cachoeira escondida. Atrás dela, há inscrições antigas revelando a localização do Coração das Estrelas.</p>
+            <button class="btn-proximo" data-proximo="11">Explorar o templo escondido</button>
+        </div>
+
+        <div class="passo" id="passo-10">
+            <p>O rio à direita termina em um pântano enevoado. Apesar da beleza do lugar, não há sinais do artefato.</p>
+            <button class="btn-proximo" data-proximo="12">Retornar e tentar o outro caminho</button>
+        </div>
+
+        <div class="passo" id="passo-11">
+            <img src="img/cenario-passo11-cidade-perdida.png" alt="imagem de um templo misterioso na floresta">
+            <p>Dentro do templo, você encontra o Coração das Estrelas brilhando em meio a inscrições antigas. Você decide dedicar sua vida a proteger e estudar esse artefato lendário.</p>
+        </div>
+
+        <div class="passo" id="passo-12">
+            <p>Ao retornar e seguir pelo outro rio, você finalmente encontra a cachoeira e o templo que guardam o Coração das Estrelas.</p>
+            <button class="btn-proximo" data-proximo="11">Explorar o templo escondido</button>
         </div>
     </main>
     <script src="script.js"></script>
